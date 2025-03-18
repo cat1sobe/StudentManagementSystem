@@ -114,32 +114,33 @@ input[type="text"],input[type="password"] {
 									<s:submit cssClass="btn btn-default" value="Cancel" />
 									<s:submit cssClass="btn btn-primary" value="Submit"
 										data-toggle="modal" data-target="#themodal" />
-									<div id="themodal" class="modal fade col-lg-9 col-lg-offset-3" data-backdrop="static">
-										<div class="modal-dialog">
-											<div class="modal-content">
-												<div class="modal-header">
-													<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-													<h3>Signup Form Submission</h3>
-												</div>
-												<div class="modal-body">
-													<p>Are you sure you want to submit the details?</p>
-													<div class="progress progress-striped active">
-														<div id="doitprogress" class="progress-bar"></div>
-													</div>
-												</div>
-												<div class="modal-footer">
-													<sj:submit cssClass="btn btn-primary" value="Yes"
-														id="yesbutton" formId="myForm"
-														data-loading-text="Saving.."
-														data-complete-text="Submit Complete!" />
-												</div>
-											</div>
-										</div>
-									</div>
 								</div>
 								<s:hidden name="pageName" value="signup" />
 							</fieldset>
 						</s:form>
+						
+						<div id="themodal" class="modal fade" data-backdrop="static">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+										<h3>Signup Form Submission</h3>
+									</div>
+									<div class="modal-body">
+										<p>Are you sure you want to submit the details?</p>
+										<div class="progress progress-striped active">
+											<div id="doitprogress" class="progress-bar"></div>
+										</div>
+									</div>
+									<div class="modal-footer">
+										<sj:submit cssClass="btn btn-primary" value="Yes"
+											id="yesbutton" formId="myForm"
+											data-loading-text="Saving.."
+											data-complete-text="Submit Complete!" />
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
